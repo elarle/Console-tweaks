@@ -1,0 +1,6 @@
+#!/bin/bash
+if ! [ -d "./.temp/" ]; then
+    mkdir ./.temp
+fi
+gcc main.c -o .temp/run -lm
+./.temp/run
