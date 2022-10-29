@@ -25,9 +25,9 @@ int main(){
   for(int i = 0; i <= 1000000000; i+=1){
     bar.setPercentage(i/10000000, 5);
   }
-
+  int a = 1203;
   mv(0, 4);
-  println(GREEN, "Done!                   ");
+  println(GREEN, "Done! %u                   ", a);
   mv(0, 6);
 
   //char c = getchar();

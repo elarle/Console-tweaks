@@ -58,7 +58,7 @@ inline void print(std::string color, std::string msg, ...){
 	std::string ap = color;
 	ap += msg;
 	ap += NORMAL;
-	printf(ap.c_str(), s_args);
+	vprintf(ap.c_str(), s_args);
 }
 void println(std::string color, std::string msg, ...);
 inline void println(std::string color, std::string msg, ...){
@@ -68,7 +68,7 @@ inline void println(std::string color, std::string msg, ...){
 	ap += msg;
 	ap += NORMAL;
 	ap += '\n';
-	printf(ap.c_str(), s_args);
+	vprintf(ap.c_str(), s_args);
 }
 
 class LoadingBar{
